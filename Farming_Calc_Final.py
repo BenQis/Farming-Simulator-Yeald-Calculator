@@ -1,4 +1,3 @@
-# import tkinter
 import tkinter.messagebox
 import customtkinter
 from Database_dictionary import *
