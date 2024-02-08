@@ -24,12 +24,12 @@ Just download and run .exe file.
 Put in same directory .exe and Log_book.csv file.
 ## Demo
 
-![Demo](/Farming-Simulator-Yeald-Calculator/DemoGIF.gif?raw=true "GIF")
+![Demo](/DemoGIF.gif?raw=true "GIF")
 
 
 ## Screenshots
 
-![App Screenshot]![Demo](/Farming-Simulator-Yeald-Calculator/Screenshot.png?raw=true "Screenshot")
+![App Screenshot](/Screenshot.png?raw=true "Screenshot")
 
 
 ## Authors
