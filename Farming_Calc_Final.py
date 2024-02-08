@@ -670,14 +670,13 @@ appearance_mode_optionmenu.set("Dark")
 scaling_optionmenu.set("100%")
 
 # Version
-ver = 0.0
+ver = "0.0.1"
 # Textbox Welcome Message
 textbox.insert("0.0", "Command Window - tu możesz zapisać notatki!\n\n"
                + f'Witaj w kalkulatorze do "Farming Simulator 20" version: {ver} !\n\n' +
                'Wybierz poziom trudności,'
                '\n\nWprowadź wielkość pola w Ha,'
-               '\n\nWybierz uprawę, dostępne bonusy oraz cenę, po której będziesz chciał sprzedać urobek'
-               '\n\nLog WIP(disabled), Progress bary WIP (disabled), Ilości nawozów WIP(brak wpływu na obliczenia)')
+               '\n\nWybierz uprawę, dostępne bonusy oraz cenę, po której będziesz chciał sprzedać urobek')
 textbox.see('end')
 
 
