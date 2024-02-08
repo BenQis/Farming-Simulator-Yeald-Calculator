@@ -24,7 +24,7 @@ Just download and run .exe file.
 Put in same directory .exe and Log_book.csv file.
 ## Demo
 
-Insert gif or link to demo
+[](https://github.com/BenQis/Farming-Simulator-Yeald-Calculator/DemoGIF.gif)
 
 
 ## Screenshots
