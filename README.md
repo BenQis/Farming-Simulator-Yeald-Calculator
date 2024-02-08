@@ -27,11 +27,6 @@ Put in same directory .exe and Log_book.csv file.
 ![Demo](/DemoGIF.gif?raw=true "GIF")
 
 
-## Screenshots
-
-![App Screenshot](/Screenshot.png?raw=true "Screenshot")
-
-
 ## Authors
 
 - [@BenQis](https://github.com/BenQis)
