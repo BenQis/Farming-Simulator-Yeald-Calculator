@@ -1,0 +1,135 @@
+
+Apperance mode
+  def change_appearance_mode_event(self, new_appearance_mode: str):
+      customtkinter.set_appearance_mode(new_appearance_mode)
+Scaling Change
+
+
+Option menu
+  def optionmenu_event(self):
+      pass
+
+Radio Buttton
+
+ scrolable bar switches
+   def switch1(value):
+       print(f'{value}')
+
+elf.combobox_1 = customtkinter.CTkComboBox(self.tabview.tab("Tab 1"), values=["Value 1", "Value 2", "Value Long....."])
+elf.combobox_1.grid(row=1, column=0, padx=20, pady=(10, 10))
+
+elf.string_input_button = customtkinter.CTkButton(self.tabview.tab("Tab 1"), text="Open CTkInputDialog", command=self.open_input_dialog_event)
+elf.string_input_button.grid(row=2, column=0, padx=20, pady=(10, 10))
+
+ create slider and progressbar frame
+
+ self.slider_progressbar_frame = customtkinter.CTkFrame(self, fg_color="transparent")
+ self.slider_progressbar_frame.grid(row=1, column=1, padx=(20, 0), pady=(20, 0), sticky="nsew")
+ self.slider_progressbar_frame.grid_columnconfigure(0, weight=1)
+ self.slider_progressbar_frame.grid_rowconfigure(4, weight=1)
+
+ self.seg_button_1 = customtkinter.CTkSegmentedButton(self.slider_progressbar_frame)
+ self.seg_button_1.grid(row=0, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
+
+ self.progressbar_1 = customtkinter.CTkProgressBar(self.slider_progressbar_frame)
+ self.progressbar_1.grid(row=1, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
+
+ self.progressbar_2 = customtkinter.CTkProgressBar(self.slider_progressbar_frame)
+ self.progressbar_2.grid(row=2, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
+
+ self.slider_1 = customtkinter.CTkSlider(self.slider_progressbar_frame, from_=0, to=1, number_of_steps=4)
+ self.slider_1.grid(row=3, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
+
+ self.slider_2 = customtkinter.CTkSlider(self.slider_progressbar_frame, orientation="vertical")
+ self.slider_2.grid(row=0, column=1, rowspan=5, padx=(10, 10), pady=(10, 10), sticky="ns")
+
+ self.progressbar_3 = customtkinter.CTkProgressBar(self.slider_progressbar_frame, orientation="vertical")
+ self.progressbar_3.grid(row=0, column=2, rowspan=5, padx=(10, 20), pady=(10, 10), sticky="ns")
+
+ self.sidebar_button_3.configure(state="disabled", text="Disabled CTkButton")
+
+ self.checkbox_3.configure(state="disabled")
+
+self.combobox_1.set("CTkComboBox")
+
+self.slider_1.configure(command=self.progressbar_2.set)
+self.slider_2.configure(command=self.progressbar_3.set)
+
+self.progressbar_1.configure(mode="indeterminnate")
+
+self.seg_button_1.configure(values=["CTkSegmentedButton", "Value 2", "Value 3"])
+self.seg_button_1.set("Value 2")
+
+def open_input_dialog_event(self):
+    dialog = customtkinter.CTkInputDialog(text="Type in a number:", title="CTkInputDialog")
+    print("CTkInputDialog:", dialog.get_input())
+
+Sidebar
+def sidebar_button_easy(self):
+    print("Wybrano Łatwy poziom trudności")
+def sidebar_button_medium(self):
+    print("Wybrano Średni poziom trudności")
+def sidebar_button_hard(self):
+    print("Wybrano Trudny trudności")
+def sidebar_button_average(self):
+    print("Wybrano średnią cenę")
+def sidebar_button_good(self):
+    print("Wybrano dobrą cenę")
+def sidebar_button_best(self):
+    print("Wybrano najlepszą cenę")
+
+
+sidebar_var = poziom trudności value=0 - 'Łatwy'
+								 value=1 - 'Średni'
+								 value=2 - 'Trudny'
+price_var= od 0 do 2 cena średna, dobra, najlepsza
+self_option_menu_1_event(value) - typ uprawy
+
+progressbar_loss_variable = 0.0 do 1 przesunięcie suwaka
+progressbar_earning_variable = 0.0 do 1 przesunięcie suwaka
+
+log_price_entry_var- cena do zapisania w logu
+log_save_button_event - guzik zapisania loga
+
+entry_var = double o wielkości pola
+
+checkbox_1_var = customtkinter.StringVar(value='on') - pszczoły variable='on'/'off'
+
+radio_var0 = tkinter.IntVar(value=1) - herbicyd/pielnik
+
+radio_var1 = tkinter.IntVar(value=0) od 0 do 3 rzodkiew oleista/płynny nawóz/stały nawóz/gnojóka
+
+radio_var2 = tkinter.IntVar(value=0) od 0 do 2 płynny nawóz/stały nawóz/gnojóka
+
+switch1_var = customtkinter.StringVar(value='on') nawóz 1
+switch2_var = customtkinter.StringVar(value='on') nawóz 2
+switch3_var = customtkinter.StringVar(value='on') oranie
+switch4_var = customtkinter.StringVar(value='on') wapnowanie
+switch5_var = customtkinter.StringVar(value='on') odchwaszczanie
+switch6_var = customtkinter.StringVar(value='on') wałowanie
+switch7_var = customtkinter.StringVar(value='on') mulczowanie
+
+
+# wywołanie elementu z słownika:
+# dict1['key1'][0] - dla klucza pierwszego wartość 0 stringa czyli pozycji klucza
+
+
+a = [1,2,3,4,5] # crop data
+b = [5]
+def renturn_crop(a,b):
+    b_set = set(b)
+    return[i for i, item in enumerate(a) if item in b_set]
+print(renurn_crop(a,b))
+
+with open('rollin_stones.txt', 'r') as file1:
+    content = file1.read()
+
+print('dalsza czesc programu, plik zamknięty')
+print(content)
+
+content = content.split()
+print(content)
+print(f'liczba slow: {len(content)}')
+
+gnojówka/obornik/kompost to to samo ale mozna jakos dodac
+
