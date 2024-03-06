@@ -4,7 +4,9 @@
 A program written 100% in python, using the "custom TK inter" library for the GUI. The program has been packaged into an executable file. 
 
 
+
 ## Programme features:
+
 
 - Selecting economic difficulties
 - Selection from average, good and best possible selling price
@@ -16,15 +18,10 @@ A program written 100% in python, using the "custom TK inter" library for the GU
 - choice of light, dark and system default appearance
 - scaling of the application window
 - Windowed mode
-- Polish version only
-
-
 ## Installation
 
 Just download and run .exe file.
 Put in same directory .exe and Log_book.csv file.
-
-
 ## Demo
 
 ![Demo](/DemoGIF.gif?raw=true "GIF")
@@ -36,11 +33,7 @@ Put in same directory .exe and Log_book.csv file.
 
 
 ## 🚀 About Me
-
 I am a beginner programmer in python, currently studying part-time as a python developer.
-
-
 ## 🛠 Skills
-
 Python, GIT, C++, Solidworks, Blender
 
