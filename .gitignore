@@ -159,5 +159,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-Kopia FS22 - Podręcznik Rolnika (V3.9)
-exe packing
+/Kopia FS22 - Podręcznik Rolnika (V3.9).pdf
+/exe packing.txt
