@@ -526,7 +526,18 @@ def calculate():
 
     # textbox.configure(font=customtkinter.CTkFont(size=18))
     textbox.insert('end', f'\n' * 13 +
-                   f'{plant} na polu {area} Ha, da urobek: \t\t\t\t{harvest[0] * area} l ' +
+                   f'{plant} na polu {area} Ha, da urobek: \t\t\t\t{
+                    round(((harvest[0] * area / 1000 * price) +
+                           (harvest[0] * price * 0.225 * area / 1000 * switch1_var.get()) +
+                           (harvest[0] * price * 0.225 * area / 1000 * switch2_var.get()) +
+                           (harvest[0] * price * 0.15 * area / 1000 * switch3_var.get()) +
+                           (harvest[0] * price * 0.15 * area / 1000 * switch4_var.get()) +
+                           (harvest[0] * price * 0.15 * area / 1000 * switch5_var.get()) +
+                           (harvest[0] * price * 0.025 * area / 1000 * switch6_var.get()) +
+                           (harvest[0] * price * 0.025 * area / 1000 * switch7_var.get()) +
+                           (harvest[0] * price * area / 1000 * float(bees_f) * bees) -
+                           (harvest[0] * price * 0.15 * area / 1000 * herb) +
+                           (harvest[1] * area / 1000 * Normal_prices['Słoma'][1] * checkbox_2_var.get())), 2)} l ' +
                    f'oraz \t\t\t\t{harvest[1] * area} l słomy' * checkbox_2_var.get() +
 
                    f'\nCena za "{plant}" to: \t\t\t\t{price} euro' +
@@ -670,7 +681,7 @@ appearance_mode_optionmenu.set("Dark")
 scaling_optionmenu.set("100%")
 
 # Version
-ver = "0.0.1"
+ver = "0.1.0"
 # Textbox Welcome Message
 textbox.insert("0.0", "Command Window - tu możesz zapisać notatki!\n\n"
                + f'Witaj w kalkulatorze do "Farming Simulator 20" version: {ver} !\n\n' +
