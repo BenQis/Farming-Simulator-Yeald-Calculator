@@ -14,7 +14,7 @@ customtkinter.set_appearance_mode("System")     # Modes: "System" (standard), "D
 customtkinter.set_default_color_theme("green")  # Themes: "blue" (standard), "green", "dark-blue"
 
 # configure grid layout (3x4)
-self.grid_columnconfigure(1, weight=1)git s
+self.grid_columnconfigure(1, weight=1)
 self.grid_columnconfigure(2, weight=0)
 self.grid_rowconfigure((0, 2), weight=1)
 
