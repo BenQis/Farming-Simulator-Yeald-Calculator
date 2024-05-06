@@ -10,8 +10,10 @@ self = customtkinter.CTk()
 # configure window
 self.title("UnOfficial Farming 2022 Calculator")
 self.geometry(f"{1100}x{600}")
+self.minsize(1100, 600)
 customtkinter.set_appearance_mode("System")     # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("green")  # Themes: "blue" (standard), "green", "dark-blue"
+
 
 # configure grid layout (3x4)
 self.grid_columnconfigure(1, weight=1)
@@ -573,7 +575,7 @@ def calculate():
                    f'\t\t\t\t{round(harvest[1] * area / 1000 * Normal_prices['Słoma'][1], 2)} euro'
                    * checkbox_2_var.get() +
                    f'\n' +
-                   f'-' * 80 +
+                   f'-' * 100 +
                    f'\nZysk w sumie: \t\t\t\t{together1} euro')
 
     textbox.insert('end', f'\n\n\nWydatki wyniosą:'
@@ -587,12 +589,12 @@ def calculate():
                    f'\nKoszt użycia herbicydu: \t\t\t\t-{round(manure[1][0] * area * manure[1][1], 2)} euro'
                    * herb +
                    f'\n' +
-                   f'-' * 80 +
+                   f'-' * 100 +
                    f'\nWydatki w sumie: \t\t\t\t{together2} euro')
 
     textbox.insert('end',
                    f'\n' +
-                   f'=' * 46 +
+                   f'=' * 45 +
                    f'\nDochód w sumie: \t\t\t\t{round(together1 - together2, 2)} euro')
     textbox.see('end')
     return area, together2, together1
