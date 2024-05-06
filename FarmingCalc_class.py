@@ -241,14 +241,6 @@ class App(customtkinter.CTk):
                                                        text_color=("gray10", "#DCE4EE"))
         self.log_save_button.grid(row=3, column=1, padx=(10, 10), pady=(10, 20), sticky="ne")
 
-        # signature
-        # self.signature_label = customtkinter.CTkLabel(master=self.entry_frame,
-        #                                               text_color='grey20',
-        #                                               text='Napisane i skompilowane przez Jakub Konop dla Bartka <3',
-        #                                               bg_color='transparent', font=customtkinter.CTkFont(size=10))
-        # self.entry_frame.grid_rowconfigure(4, weight=1)
-        # self.signature_label.grid(row=5, column=0, columnspan=1, padx=10, pady=(0, 0), sticky="ws")
-
         # create tabview
         self.tabview = customtkinter.CTkTabview(self, width=250)
         self.tabview.grid(row=0, column=2, padx=(20, 0), pady=(2, 0), sticky="nsew")
