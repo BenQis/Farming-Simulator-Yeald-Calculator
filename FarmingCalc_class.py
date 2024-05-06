@@ -556,6 +556,14 @@ class App(customtkinter.CTk):
             seeds = seed_usage[plant]  # zużycie nasion za 1Ha
             used_manure2 = manure[radio_var2.get()][0]  # Drugie nawożenie, zużycie na 1 Ha
             used_manure_price2 = manure[radio_var2.get()][1]  # Drugie nawożenie, zużycie na 1 Ha
+            grape = 1
+
+            if plant == 'Winogrono':
+                grape = 0
+            elif plant == 'Oliwki':
+                grape = 0
+            else:
+                grape = 1
 
             lime = manure['Wapno'][0]
             lime_price = manure['Wapno'][1]
@@ -657,7 +665,9 @@ class App(customtkinter.CTk):
 
             self.textbox.insert(
                 'end',
-                f'\n\n\nWydatki wyniosą:\nZużyte nasiona: \t\t\t\t-{area * seeds} euro \nKoszt pierwszego nawożenia:'
+                f'\n\n\nWydatki wyniosą: ' + '\n'
+                f'Zużyte nasiona: \t\t\t\t-{area * seeds} euro ' * grape +
+                f'\nKoszt pierwszego nawożenia:'
                 f' \t\t\t\t-{round(used_manure * area * used_manure_price, 2)} euro' * switch1_var.get() +
                 f'\nKoszt drugiego nawożenia: \t\t\t\t-{round(used_manure2 * area * used_manure_price2, 2)} euro'
                 * switch2_var.get() + f'\nKoszt Wapnowania:'
