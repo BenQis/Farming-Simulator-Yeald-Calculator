@@ -12,7 +12,7 @@ class App(customtkinter.CTk):
     def __init__(self):
         super(App, self).__init__()
 
-        self.title("UnOfficial Farming 2022 Calculator")
+        self.title("UnOfficial Farming 2022 Calculator CLASS")
         self.geometry(f"{1100}x{600}")
         self.minsize(1100, 600)
 
@@ -752,7 +752,7 @@ class App(customtkinter.CTk):
         self.scaling_option_menu.set("100%")
 
         # Version
-        ver = "0.1.0"
+        ver = "0.1.1"
         # Textbox Welcome Message
         self.textbox.insert(
             "0.0", "Command Window - tu możesz zapisać notatki!\n\n"

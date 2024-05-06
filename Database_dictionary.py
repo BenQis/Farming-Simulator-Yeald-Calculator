@@ -74,6 +74,8 @@ seed_usage = {'Pszenica': 500,           # Pszenica
               'Owies': 500,              # Owies
               'Rzepak': 200,             # Rzepak
               'Sorgo': 200,              # Sorgo
+              'Winogrono': 0,    # Winogrono
+              'Oliwki': 0,       # Oliwki
               'Słonecznik': 300,         # Słonecznik
               'Soja': 300,               # Soja
               'Kukurydza': 400,          # Kukurydza
