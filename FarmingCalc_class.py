@@ -137,7 +137,7 @@ class App(customtkinter.CTk):
 
         self.progressbar_earning.grid(row=0, column=0, padx=(10, 10), pady=(10, 10), sticky="new")
 
-        # create frame, main entry & spinbox,and button
+        # create frame, main entry and button
         self.entry_frame = customtkinter.CTkFrame(self)
         self.entry_frame.grid(row=2, column=1, padx=(20, 0), pady=(0, 0), sticky="nsew")
         self.entry_frame.grid_columnconfigure(0, weight=1)
