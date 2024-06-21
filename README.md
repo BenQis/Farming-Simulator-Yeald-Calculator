@@ -19,8 +19,7 @@ A program written 100% in python, using the "custom TK inter" library for the GU
 - scaling of the application window
 - Windowed mode
 ## Installation
-
-Just download and run .exe file.
+You can download and run setup or just download and run .exe file.
 Put in same directory .exe and Log_book.csv file.
 ## Demo
 
