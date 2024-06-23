@@ -7,7 +7,6 @@ A program written 100% in python, using the "custom TK inter" library for the GU
 
 ## Programme features:
 
-
 - Selecting economic difficulties
 - Selection from average, good and best possible selling price
 - Entry of field sizes - support for non-standard fields
@@ -18,9 +17,13 @@ A program written 100% in python, using the "custom TK inter" library for the GU
 - choice of light, dark and system default appearance
 - scaling of the application window
 - Windowed mode
+
 ## Installation
+
 You can download and run setup or just download and run .exe file.
-Put in same directory .exe and Log_book.csv file.
+If you chose setup, it is possible that in the properties of the file you will have to check the option to unblock file or allow installation in the pop-up smart screen window.
+If you chose .exe file put in desired directory .exe and Log_book.csv files, then run .exe.
+
 ## Demo
 
 ![Demo](/DemoGIF.gif?raw=true "GIF")
