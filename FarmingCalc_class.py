@@ -748,7 +748,7 @@ class App(customtkinter.CTk):
         self.price_button_3.configure(state='normal', fg_color='grey')
 
         # Appearance default values
-        appearance_mode_option_menu.set("Dark")
+        appearance_mode_option_menu.set("System")
 
         # Scaling default value
         self.scaling_option_menu.set("100%")
